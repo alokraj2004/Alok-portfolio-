@@ -3,10 +3,10 @@
 
 <head>
 	<title>Portfolio Site</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-	<meta property="og:title" content="Page Tile" />
+	<meta property="og:title" content="Page Title" />
 	<meta property="og:description" content="Personal Site" />
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -20,13 +20,11 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
+</head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-
-	<nav class="navba /head>
-r navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light site-navbar-target"
-		id="ftco-navbar">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 		<div class="container">
 			<a class="navbar-brand" href="index.html">Alok Raj</a>
 			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
@@ -61,15 +59,13 @@ r navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light site-navbar
 					</div>
 				</div>
 			</div>
+
 			<div class="scrollDown">
 				<span></span>
 				<span></span>
 				<span></span>
 			</div>
 		</div>
-		</div>
-		</button>
-		<div class="glyphicon glyphicon-arrow-down"></div>
 	</section>
 
 	<section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
@@ -78,11 +74,17 @@ r navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light site-navbar
 				<div class="col-md-6 col-lg-6 d-flex">
 					<div class="img-about img d-flex align-items-stretch">
 						<div class="overlay"></div>
-						<div class="img d-flex align-self-stretch align-items-center"
-							style="background-image:url(images/raj.JPG);">
-						</div>
+
+						<!-- Prefer a real <img> for robustness; keep background fallback if your CSS expects it -->
+						<img src="images/raj.JPG" alt="Alok Raj" class="img-fluid align-self-stretch" style="object-fit:cover; width:100%; height:100%;">
+						<!--
+							Important:
+							- Check the exact filename in your repository: images/raj.JPG is case-sensitive.
+							- If the file is images/raj.jpg (lowercase), change the src accordingly.
+						-->
 					</div>
 				</div>
+
 				<div class="col-md-6 col-lg-6 pl-md-5 py-5">
 					<div class="row justify-content-start pb-3">
 						<div class="col-md-12 heading-section ftco-animate">
@@ -99,14 +101,15 @@ r navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light site-navbar
 					</div>
 					<div class="counter-wrap ftco-animate d-flex mt-md-3">
 						<div class="text">
-							<p><a href="https://drive.google.com/file/d/1puTi9HRyPB_sMObMhZ0MUPFrC9LAvoHl/view?usp=drivesdk  " class="btn btn-primary py-3 px-3">Download CV</a></p>
-			</div>
-		</div>
-	</section>				</div>
+							<p><a href="https://drive.google.com/file/d/1puTi9HRyPB_sMObMhZ0MUPFrC9LAvoHl/view?usp=drivesdk" class="btn btn-primary py-3 px-3">Download CV</a></p>
+						</div>
 					</div>
 				</div>
-		
+			</div>
+		</div>
+	</section>
 
+	<!-- Resume/other sections (kept intact, trimmed formatting errors) -->
 	<section class="ftco-section ftco-no-pb goto-here" id="resume-section">
 		<div class="container">
 			<div class="row">
@@ -120,9 +123,11 @@ r navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light site-navbar
 						</ul>
 					</nav>
 				</div>
+
 				<div class="col-md-9">
 					<div id="page-1" class="page one">
 						<h2 class="heading">Education</h2>
+						<!-- Education entries -->
 						<div class="resume-wrap d-flex ftco-animate">
 							<div class="icon d-flex align-items-center justify-content-center">
 								<span class="flaticon-graduation-cap"></span>
@@ -130,11 +135,12 @@ r navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light site-navbar
 							<div class="text pl-3">
 								<h2>Poornima Institute of Engineering & Technology</h2>
 								<span class="position">Bachelor of Engineering</span>
-								<p><strong>Computer  Engineering</strong></p>
+								<p><strong>Computer Engineering</strong></p>
 								<p>Jaipur- Rajasthan - India</p>
 								<span class="date">2022-2026</span>
 							</div>
 						</div>
+
 						<div class="resume-wrap d-flex ftco-animate">
 							<div class="icon d-flex align-items-center justify-content-center">
 								<span class="flaticon-book"></span>
@@ -147,12 +153,13 @@ r navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light site-navbar
 								<span class="date">2020-2022</span>
 							</div>
 						</div>
+
 						<div class="resume-wrap d-flex ftco-animate">
 							<div class="icon d-flex align-items-center justify-content-center">
 								<span class="flaticon-book"></span>
 							</div>
 							<div class="text pl-3">
-								<h2> Sharon's public School</h2>
+								<h2>Sharon's Public School</h2>
 								<span class="position">Matriculated</span>
 								<p><strong>Science</strong></p>
 								<p>Patna - India</p>
@@ -160,87 +167,81 @@ r navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light site-navbar
 							</div>
 						</div>
 					</div>
-					
+
 					<div id="page-2" class="page two">
-						<h2 class="heading">Intership</h2>
+						<h2 class="heading">Internship</h2>
+						<!-- Internship content -->
 						<div class="row">
-			<h1 class="big-4">Intership</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">07/08/2023 - 22/08/2023</span>
-						<h2>Zeetron Networks Pvt. Ltd.</h2>
-						<span class="position">Python Trainee</span>
-						<p class="mt-4">An enthusiastic Python trainee intern, mastering scripting, data structures, and libraries; contributing code, debugging, and collaborating on real-world projects to solve technical challenges.
-
-
-						    	
-						</p>
-					</div>
-
-				</div>
-
-					
-						
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">07/07/2024 - 24/08/2024</span>
-						<h2>Devyut Softech Pvt. Ltd.</h2>
-						<span class="position">Android Development </span>
-						<p class="mt-4">A driven Android development intern using Flutter to build intuitive cross‑platform apps, implement responsive UI, integrate APIs, debug code, and collaborate effectively
-							
-						</p>
-					</div>
-
-				</div>
-			</div>
-
-		<br>
-		<br>
-					<div id="page-3" class="page three">
-						<h2 class="heading">Skills</h2>
-						
-						<div class="row mb-4 ftco-animate">
-							<div class="col grow"><img class="img-fluid" src="images/skills/python.png"	title="Python"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/html.png" title="HTML"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/css.png" title="CSS"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/cplusplus.png" title="C++"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/javascript.png" title="javascript"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/php.png" title="PHP"></div>					
+							<h1 class="big-4">Internship</h1>
+							<div class="underline"></div>
 						</div>
-					</div>
-					<div id="page-4" class="page four">
-						<h2 class="heading">Awards</h2>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-medal"></span>
+						<br>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="resume-wrap ftco-animate">
+									<span class="date">07/08/2023 - 22/08/2023</span>
+									<h2>Zeetron Networks Pvt. Ltd.</h2>
+									<span class="position">Python Trainee</span>
+									<p class="mt-4">An enthusiastic Python trainee intern, mastering scripting, data structures, and libraries; contributing code, debugging, and collaborating on real-world projects to solve technical problems.</p>
+								</div>
 							</div>
-							<div class="text pl-3">
-								<h2>Smart Door Bell</h2>
-								<span class="position"><strong>IOT</strong></span>
-								<span><strong> - Poornima int. Engg. & Tech</strong></span>
-								<p class="date">25th-Aug-2023</p>
-								<p>Jaipur-Rajasthan</p>
+
+							<div class="col-md-6">
+								<div class="resume-wrap ftco-animate">
+									<span class="date">07/07/2024 - 24/08/2024</span>
+									<h2>Devyut Softech Pvt. Ltd.</h2>
+									<span class="position">Android Development</span>
+									<p class="mt-4">A driven Android development intern using Flutter to build intuitive cross‑platform apps, implement responsive UI, integrate APIs, debug code, and collaborate effectively.</p>
+								</div>
 							</div>
 						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-trophy"></span>
-							</div>
-							<div class="text pl-3">
-								<h2>Runner up - Poster Competition</h2>
-								<span class="position"><strong>G20</strong></span>
-								<span><strong>  Poornima int. Engg. & Tech </strong></span>
-								<p class="date">18th-May-2023</p>
-								<p>Jaipur-Rajasthan</p>
+
+						<br><br>
+
+						<div id="page-3" class="page three">
+							<h2 class="heading">Skills</h2>
+							<div class="row mb-4 ftco-animate">
+								<div class="col grow"><img class="img-fluid" src="images/skills/python.png" title="Python"></div>
+								<div class="col grow"><img class="img-fluid" src="images/skills/html.png" title="HTML"></div>
+								<div class="col grow"><img class="img-fluid" src="images/skills/css.png" title="CSS"></div>
+								<div class="col grow"><img class="img-fluid" src="images/skills/cplusplus.png" title="C++"></div>
+								<div class="col grow"><img class="img-fluid" src="images/skills/javascript.png" title="javascript"></div>
+								<div class="col grow"><img class="img-fluid" src="images/skills/php.png" title="PHP"></div>
 							</div>
 						</div>
+
+						<div id="page-4" class="page four">
+							<h2 class="heading">Awards</h2>
+							<div class="resume-wrap d-flex ftco-animate">
+								<div class="icon d-flex align-items-center justify-content-center">
+									<span class="flaticon-medal"></span>
+								</div>
+								<div class="text pl-3">
+									<h2>Smart Door Bell</h2>
+									<span class="position"><strong>IOT</strong></span>
+									<span><strong> - Poornima int. Engg. & Tech</strong></span>
+									<p class="date">25th-Aug-2023</p>
+									<p>Jaipur-Rajasthan</p>
+								</div>
+							</div>
+
+							<div class="resume-wrap d-flex ftco-animate">
+								<div class="icon d-flex align-items-center justify-content-center">
+									<span class="flaticon-trophy"></span>
+								</div>
+								<div class="text pl-3">
+									<h2>Runner up - Poster Competition</h2>
+									<span class="position"><strong>G20</strong></span>
+									<span><strong> Poornima int. Engg. & Tech </strong></span>
+									<p class="date">18th-May-2023</p>
+									<p>Jaipur-Rajasthan</p>
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</section>
@@ -252,34 +253,31 @@ r navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light site-navbar
 					<h2 class="mb-4">Projects</h2>
 				</div>
 			</div>
+
 			<div class="row">
 				<div class="col-md-4 text-center d-flex ftco-animate">
 					<a class="services-1 shadow">
 						<div class="desc">
 							<h3 class="mb-4">Electricity Bill Provider</h3>
 							<p><strong>• Html •css  • Python</strong></p>
-							<p>An electricity bill is a statement provided by an electricity provider that 
-details the amount of electricity consumed and the charges for a 
-specific billing period that is digitally provided. </p>
+							<p>An electricity bill is a statement provided by an electricity provider that details the amount of electricity consumed and the charges for a specific billing period that is digitally provided.</p>
 						</div>
 					</a>
 				</div>
-				<div class="row"></div>
-				<div class="col-md-4 text-center d-flex mx-auto ftco-animate">
-						<a class="services-1 shadow">
-							<div class="desc">
-								<h3 class="mb-4">We Chatting App</h3>
-								<p><strong>• Flutter • Dart</strong></p>
-								<p>An multi-purpose messaging, social media and Real‑time messaging via Firebase or Stream enables instant delivery </p>
 
-							</div>
-						</a>
+				<div class="col-md-4 text-center d-flex mx-auto ftco-animate">
+					<a class="services-1 shadow">
+						<div class="desc">
+							<h3 class="mb-4">We Chatting App</h3>
+							<p><strong>• Flutter • Dart</strong></p>
+							<p>A multi-purpose messaging, social media and Real‑time messaging via Firebase or Stream enables instant delivery.</p>
+						</div>
+					</a>
 				</div>
 			</div>
-		</div>
+
 		</div>
 	</section>
-
 
 	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
 		<div class="container">
@@ -297,10 +295,11 @@ specific billing period that is digitally provided. </p>
 						</div>
 						<div>
 							<h3 class="mb-4">Contact Number</h3>
-							<p><a href="tel:+917633853037">+91 6206925099</a></p>
+							<p><a href="tel:+916206925099">+91 6206925099</a></p>
 						</div>
 					</div>
 				</div>
+
 				<div class="col-md-6 col-lg-4 d-flex ftco-animate">
 					<div class="align-self-stretch box text-center p-4 shadow">
 						<div class="icon d-flex align-items-center justify-content-center">
@@ -308,18 +307,15 @@ specific billing period that is digitally provided. </p>
 						</div>
 						<div>
 							<h3 class="mb-4">Email Address</h3>
-							<p><a href="mailto:keshavprashar597@gmail.com">alok31raj@gmail.com</a></p>
+							<p><a href="mailto:alok31raj@gmail.com">alok31raj@gmail.com</a></p>
 						</div>
-					</div>
-				</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="row no-gutters block-9">
 				<div class="col-md-6 order-md-last d-flex">
-					<form method="POST" action="https://formsubmit.co/alok31raj@gmail.com"
-						class="bg-light p-4 p-md-5 contact-form">
+					<form method="POST" action="https://formsubmit.co/alok31raj@gmail.com" class="bg-light p-4 p-md-5 contact-form">
 						<div class="form-group">
 							<input type="text" class="form-control" name="name" placeholder="Your Name" required>
 						</div>
@@ -327,8 +323,7 @@ specific billing period that is digitally provided. </p>
 							<input type="email" class="form-control" name="email" placeholder="Your Email" required>
 						</div>
 						<div class="form-group">
-							<textarea id="" cols="30" rows="7" class="form-control" name="message" placeholder="Message"
-								required></textarea>
+							<textarea cols="30" rows="7" class="form-control" name="message" placeholder="Message" required></textarea>
 						</div>
 
 						<div class="form-group">
@@ -336,7 +331,6 @@ specific billing period that is digitally provided. </p>
 							<input type="hidden" name="_next" value="//ahsankhan.me" />
 						</div>
 					</form>
-
 				</div>
 
 				<div class="col-md-6 d-flex">
@@ -345,7 +339,6 @@ specific billing period that is digitally provided. </p>
 			</div>
 		</div>
 	</section>
-
 
 	<footer class="ftco-footer ftco-section">
 		<div class="container">
@@ -356,25 +349,21 @@ specific billing period that is digitally provided. </p>
 						<p>I like working with new tools and technologies</p>
 						<p class="mt-4"><u>Social Links</u></p>
 						<ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-							<li class="ftco-animate"><a href="https://github.com/alokraj2004" target="_blank"><span
-										class="icon-github"></span></a></li>
-							<li class="ftco-animate"><a href="https://www.linkedin.com/in/alok-raj-4b18a3256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-									target="_blank"><span class="icon-linkedin-square"></span></a></li>
-							<li class="ftco-animate"><a href="https://www.instagram.com/alok_raj.31/" target="_blank"><span
-										class="icon-instagram"></span></a></li>
+							<li class="ftco-animate"><a href="https://github.com/alokraj2004" target="_blank"><span class="icon-github"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.linkedin.com/in/alok-raj-4b18a3256" target="_blank"><span class="icon-linkedin-square"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.instagram.com/alok_raj.31/" target="_blank"><span class="icon-instagram"></span></a></li>
 						</ul>
 					</div>
 				</div>
+
 				<div class="col-md">
 					<div class="ftco-footer-widget mb-4 ml-md-4">
 						<h2 class="ftco-heading-2">Links</h2>
 						<ul class="list-unstyled">
 							<li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
 							<li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-							<li><a href="#project-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a>
-							</li>
-							<li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a>
-							</li>
+							<li><a href="#project-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+							<li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
 						</ul>
 					</div>
 				</div>
@@ -386,8 +375,10 @@ specific billing period that is digitally provided. </p>
 							<ul>
 								<li>
 									<a href="tel:+916206925099">
-										<span class="icon icon-phone"></span> +91 6206925099									</a>
-								</li>	<li>
+										<span class="icon icon-phone"></span> +91 6206925099
+									</a>
+								</li>
+								<li>
 									<a href="mailto:alok31raj@gmail.com">
 										<span class="icon icon-envelope"></span> alok31raj@gmail.com
 									</a>
@@ -396,7 +387,9 @@ specific billing period that is digitally provided. </p>
 						</div>
 					</div>
 				</div>
+
 			</div>
+
 			<div class="row">
 				<div class="col-md-12 text-center">
 					<i class="icon-heart color-danger" aria-hidden="true"></i>
@@ -414,7 +407,6 @@ specific billing period that is digitally provided. </p>
 			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
 				stroke="#F96D00" />
 		</svg></div>
-
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
